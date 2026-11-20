@@ -439,7 +439,18 @@ const toneSelectEl = document.getElementById("toneSelect");
 let currentWaveform = toneSelectEl.value;
 
 toneSelectEl.addEventListener("change", () => {
-  currentWaveform = toneSelectEl.value;
+  const synthPresets = {
+    "electric-piano": "triangle",
+    bass: "square",
+    pluck: "triangle",
+    glass: "sine",
+    organ: "sawtooth",
+    "ambient-cloud": "dreamy",
+    arpeggiator: "square",
+    sampler: "triangle",
+    lfo: "triangle",
+  };
+  currentWaveform = synthPresets[toneSelectEl.value] || toneSelectEl.value;
   synth.currentKey = null; // forces sound refresh
 });
 
