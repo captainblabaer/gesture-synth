@@ -1176,6 +1176,17 @@ body.song-tutorial-open #phoneGuidedSongs { display: none; }
 }
 </style>
   <script type="module" crossorigin src="/assets/index-B9uAiGXI.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("mode") === "guided") return;
+
+      const playNow = document.getElementById("playNowButton");
+      if (playNow) {
+        requestAnimationFrame(() => playNow.click());
+      }
+    });
+  </script>
   <link rel="stylesheet" crossorigin href="/assets/index-YbAQRoxl.css">
 </head>
 
