@@ -1,4 +1,8 @@
 import { HandLandmarker, FilesetResolver } from "@mediapipe/tasks-vision";
+import { inject } from '@vercel/analytics';
+
+// Initialize Vercel Web Analytics
+inject();
 
 // ---- DOM references ----
 const videoEl = document.getElementById("webcam");
