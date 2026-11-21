@@ -148,26 +148,6 @@ html, body {
   right: 12px;
 }
 
-#songTutorialToggleButton {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  z-index: 6;
-  box-sizing: border-box;
-  height: 30px;
-  padding: 4px 6px;
-  border: 1px solid #3a3428;
-  border-radius: 4px;
-  background: #1a1a1a;
-  color: #e8a13d;
-  font: 14px monospace;
-  cursor: pointer;
-}
-
-#songTutorialToggleButton:hover {
-  background: #29241c;
-}
-
 .gesture-guide-title {
   margin-bottom: 6px;
 
@@ -1120,7 +1100,6 @@ body.song-tutorial-open #phoneGuidedSongs { display: none; }
 @media (max-width: 600px) {
   .help-content { padding: 16px; }
 
-  #songTutorialToggleButton { display: none; }
   body.song-tutorial-open #volumeMeter { display: none !important; }
   body.song-tutorial-open #keySelect,
   body.song-tutorial-open #toneSelect,
@@ -1255,8 +1234,6 @@ body.song-tutorial-open #phoneGuidedSongs { display: none; }
   <!-- GUIDE -->
 
   <button id="guideToggle">Close Guide</button>
-
-  <button id="songTutorialToggleButton" type="button">✨ new mode ✨</button>
 
   <div id="gestureGuide"></div>
 
