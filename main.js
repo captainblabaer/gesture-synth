@@ -1,4 +1,8 @@
 import { HandLandmarker, FilesetResolver } from "@mediapipe/tasks-vision";
+import { injectSpeedInsights } from "@vercel/speed-insights";
+
+// Initialize Vercel Speed Insights
+injectSpeedInsights();
 
 // ---- DOM references ----
 const videoEl = document.getElementById("webcam");
