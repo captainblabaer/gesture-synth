@@ -848,63 +848,6 @@ body.one-handed #volumeBars {
   display: none;
 }
 
-.sound-help {
-  position: absolute;
-  bottom: 24px;
-  right: 24px;
-
-  z-index: 18;
-
-  width: min(340px, calc(100vw - 48px));
-  box-sizing: border-box;
-
-  padding: 14px 16px;
-
-  background: rgba(20,20,20,0.95);
-  border: 1px solid #3a3428;
-  border-radius: 8px;
-
-  color: #aaa;
-  font-family: monospace;
-  font-size: 13px;
-  line-height: 1.5;
-
-  text-align: center;
-}
-
-.sound-help a {
-  color: #e8a13d;
-}
-
-.sound-help a:hover {
-  color: #f2b653;
-}
-
-.sound-help strong {
-  color: #e8a13d;
-}
-
-.sound-help button {
-  margin-top: 10px;
-
-  padding: 6px 12px;
-
-  border: 1px solid #555;
-  border-radius: 5px;
-
-  background: transparent;
-  color: #e8a13d;
-
-  font-family: monospace;
-  font-size: 12px;
-
-  cursor: pointer;
-}
-
-.sound-help button:hover {
-  border-color: #e8a13d;
-}
-
 .tutorial-card {
   width: min(520px,100%);
   text-align: center;
@@ -1175,7 +1118,6 @@ body.song-tutorial-open #phoneGuidedSongs { display: none; }
   display: none !important;
 }
 </style>
-  <script type="module" crossorigin src="/assets/index-B9uAiGXI.js"></script>
   <script>
     window.addEventListener("DOMContentLoaded", () => {
       const params = new URLSearchParams(window.location.search);
@@ -1187,21 +1129,13 @@ body.song-tutorial-open #phoneGuidedSongs { display: none; }
       }
     });
   </script>
+  <script type="module" crossorigin src="/assets/index-gHS44qaD.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-YbAQRoxl.css">
 </head>
 
 <body>
 
 <div id="stage">
-
-  <div id="soundHelp" class="sound-help hidden">
-  <div>
-    🔇 <strong>NO SOUND?</strong><br>
-    Check that <a href="https://www.wikihow.com/Turn-Off-Silent-Mode-on-iPhone" target="_blank" rel="noopener noreferrer">Silent Mode</a> is off and your volume is turned up.
-  </div>
-
-  <button id="soundHelpDismiss">Got it!</button>
-  </div>
 
   <video id="webcam" autoplay playsinline muted></video>
 
