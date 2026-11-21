@@ -1,7 +1,9 @@
 import { HandLandmarker, FilesetResolver } from "@mediapipe/tasks-vision";
-import { injectSpeedInsights } from "@vercel/speed-insights";
+import { inject } from '@vercel/analytics';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 
-// Initialize Vercel Speed Insights
+// Initialize Vercel Web Analytics and Speed Insights
+inject();
 injectSpeedInsights();
 
 // ---- DOM references ----
